@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "normalizr": "^2.2.1"
+  }
+}
