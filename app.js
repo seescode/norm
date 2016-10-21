@@ -11,8 +11,9 @@ var lessons = require('./runs/lessons.js');
 //simpleObject();
 //simpleArray();
 
-//studyplan();
+studyplan();
 
 //assignments();
 
-lessons();
+//lessons();
+

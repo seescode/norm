@@ -1,0 +1,450 @@
+{
+  "entities": {
+    "sources": {
+      "jasper": {
+        "name": "jasper",
+        "data": [
+          "MCATBetaNGC"
+        ]
+      },
+      "s3": {
+        "name": "s3",
+        "data": []
+      },
+      "isbn": {
+        "name": "isbn",
+        "data": []
+      },
+      "filter": {
+        "name": "filter",
+        "data": []
+      }
+    },
+    "data": {
+      "MCATBetaNGC": {
+        "name": "jasper-product-code",
+        "value": "MCATBetaNGC"
+      }
+    },
+    "lessons": {
+      "gettingStarted": {
+        "id": "gettingStarted",
+        "title": "Get Started",
+        "description": null,
+        "subtitle": null,
+        "subject": null,
+        "assignments": [
+          "watch-orientation-video",
+          "mcat-diagnostic-exam",
+          "science-assessments",
+          "important-welcome-message",
+          "how-to-access-your-mcat-flashcard-app",
+          "how-to-access-a-digital-version-of-your-mcat-review-books",
+          "information-about-your-higher-score-guarantee"
+        ],
+        "assignmentGroups": [],
+        "additional": null,
+        "lessons": [],
+        "path": "gettingStarted",
+        "nextLessonPath": "unit1.cars"
+      },
+      "unit1": {
+        "id": "unit1",
+        "title": "Unit 1",
+        "subtitle": null,
+        "subject": null,
+        "assignments": [],
+        "assignmentGroups": [],
+        "additional": null,
+        "lessons": [
+          "cars",
+          "chem-phys"
+        ],
+        "path": "unit1",
+        "nextLessonPath": null
+      },
+      "cars": {
+        "id": "cars",
+        "title": "CARS",
+        "subtitle": "Introduction to CARS Passages",
+        "subject": "cars",
+        "assignments": [],
+        "assignmentGroups": [
+          "preview",
+          "review",
+          "find-recommendations-and-more-resources-on-these-topics"
+        ],
+        "lessons": [],
+        "path": "unit1.cars",
+        "nextLessonPath": "unit1.chem-phys"
+      },
+      "chem-phys": {
+        "id": "chem-phys",
+        "title": "Chem / Phys",
+        "subtitle": "Science Passages and Science Knowledge Questions",
+        "subject": "chem-phys",
+        "assignments": [],
+        "assignmentGroups": [
+          "preview",
+          "review",
+          "find-recommendations-and-more-resources-on-these-topics"
+        ],
+        "lessons": [],
+        "path": "unit1.chem-phys",
+        "nextLessonPath": "unit1.bio-biochem"
+      }
+    },
+    "assignments": {
+      "watch-orientation-video": {
+        "name": null,
+        "title": "Watch Orientation Video",
+        "lesson": null,
+        "sources": [
+          "jasper"
+        ],
+        "assignments": [],
+        "format": "video.jasper",
+        "duration": 420,
+        "importance": "core",
+        "type": "assignment",
+        "availabilityRule": "Available",
+        "id": "watch-orientation-video",
+        "uri": "main/MCAT/MC150100",
+        "sequenceId": 0,
+        "status": 0
+      },
+      "mcat-diagnostic-exam": {
+        "name": null,
+        "title": "MCAT Diagnostic Exam",
+        "lesson": null,
+        "sources": [
+          "jasper"
+        ],
+        "assignments": [],
+        "format": "test.diagnostic",
+        "duration": 14400,
+        "importance": "core",
+        "type": "assignment",
+        "availabilityRule": "Available",
+        "id": "mcat-diagnostic-exam",
+        "uri": "main/MCAT/practicetests/diag/mc15Diag",
+        "sequenceId": 0,
+        "status": 0
+      },
+      "science-assessments": {
+        "name": null,
+        "title": "Science Assessments",
+        "lesson": null,
+        "sources": [
+          "jasper"
+        ],
+        "assignments": [],
+        "format": "test.diagnostic",
+        "duration": 7200,
+        "importance": "core",
+        "type": "assignment",
+        "availabilityRule": "Available",
+        "id": "science-assessments",
+        "uri": "main/MCAT/practicetests/scienceasses/mcatSciAssesment15",
+        "sequenceId": 0,
+        "status": 0
+      },
+      "important-welcome-message": {
+        "name": null,
+        "title": "Important Welcome Message",
+        "lesson": null,
+        "sources": [
+          "s3"
+        ],
+        "assignments": [],
+        "format": "reading.pdf",
+        "duration": null,
+        "importance": "core",
+        "type": "assignment",
+        "availabilityRule": "Available",
+        "id": "important-welcome-message",
+        "sequenceId": 0,
+        "status": 0
+      },
+      "how-to-access-your-mcat-flashcard-app": {
+        "name": null,
+        "title": "How to Access Your MCAT Flashcard App",
+        "lesson": null,
+        "sources": [
+          "s3"
+        ],
+        "assignments": [],
+        "format": "reading.pdf",
+        "duration": null,
+        "importance": "core",
+        "type": "assignment",
+        "availabilityRule": "Available",
+        "id": "how-to-access-your-mcat-flashcard-app",
+        "sequenceId": 0,
+        "status": 0
+      },
+      "how-to-access-a-digital-version-of-your-mcat-review-books": {
+        "name": null,
+        "title": "How to Access a Digital Version of Your MCAT Review Books",
+        "lesson": null,
+        "sources": [],
+        "assignments": [],
+        "format": "link.external",
+        "duration": null,
+        "importance": "core",
+        "type": "assignment",
+        "availabilityRule": "Available",
+        "id": "how-to-access-a-digital-version-of-your-mcat-review-books",
+        "sequenceId": 0,
+        "status": 0
+      },
+      "information-about-your-higher-score-guarantee": {
+        "name": null,
+        "title": "Information About Your Higher Score Guarantee",
+        "lesson": null,
+        "sources": [
+          "s3"
+        ],
+        "assignments": [],
+        "format": "reading.pdf",
+        "duration": null,
+        "importance": "core",
+        "type": "assignment",
+        "availabilityRule": "Available",
+        "id": "information-about-your-higher-score-guarantee",
+        "sequenceId": 0,
+        "status": 0
+      },
+      "read-cars-chapters-15": {
+        "name": null,
+        "title": "Read CARS Chapters 1–5",
+        "lesson": null,
+        "sources": [
+          "isbn"
+        ],
+        "assignments": [],
+        "format": "reading.book",
+        "duration": 9000,
+        "importance": "core",
+        "type": "assignment",
+        "availabilityRule": "Available",
+        "id": "read-cars-chapters-15",
+        "uri": null,
+        "sequenceId": 0,
+        "status": 0
+      },
+      "mcat-channel-episode-creating-an-mcat-study-schedule": {
+        "name": null,
+        "title": "MCAT Channel Episode: Creating an MCAT Study Schedule",
+        "lesson": null,
+        "sources": [
+          "jasper"
+        ],
+        "assignments": [],
+        "format": "video.mcatchannel",
+        "duration": 3600,
+        "importance": "core",
+        "type": "assignment",
+        "availabilityRule": "Available",
+        "id": "mcat-channel-episode-creating-an-mcat-study-schedule",
+        "uri": "main/MCAT/video/video8/mc15ChCars1",
+        "sequenceId": 0,
+        "status": 0
+      },
+      "cars-1-lesson-book-homework": {
+        "name": null,
+        "title": "CARS 1 Lesson Book Homework",
+        "lesson": null,
+        "sources": [
+          "s3"
+        ],
+        "assignments": [],
+        "format": "reading.pdf",
+        "duration": 2700,
+        "importance": "core",
+        "type": "assignment",
+        "availabilityRule": "Available",
+        "id": "cars-1-lesson-book-homework",
+        "sequenceId": 0,
+        "status": 0
+      },
+      "teach-me-more": {
+        "name": null,
+        "title": "Teach Me More",
+        "lesson": null,
+        "sources": [
+          "filter"
+        ],
+        "assignments": [],
+        "format": "",
+        "duration": null,
+        "importance": "core",
+        "type": "filter",
+        "criteria": {
+          "fields": [
+            {
+              "name": "lesson",
+              "value": "unit1.cars"
+            },
+            {
+              "name": "format",
+              "value": "video.interactive,reading.quiz"
+            }
+          ]
+        },
+        "availabilityRule": "Available",
+        "id": "teach-me-more",
+        "uri": null,
+        "sequenceId": 0,
+        "status": 0
+      },
+      "test-me-more": {
+        "name": null,
+        "title": "Test Me More",
+        "lesson": null,
+        "sources": [
+          "filter"
+        ],
+        "assignments": [],
+        "format": "",
+        "duration": null,
+        "importance": "core",
+        "type": "filter",
+        "criteria": {
+          "fields": [
+            {
+              "name": "lesson",
+              "value": "unit1.cars"
+            },
+            {
+              "name": "format",
+              "value": "test.quiz"
+            }
+          ]
+        },
+        "availabilityRule": "Available",
+        "id": "test-me-more",
+        "uri": null,
+        "sequenceId": 0,
+        "status": 0
+      },
+      "read-general-chemistry-chapter-3-bonding-and-chemical-interactions": {
+        "name": null,
+        "title": "Read General Chemistry Chapter 3: Bonding and Chemical Interactions",
+        "lesson": null,
+        "sources": [
+          "jasper"
+        ],
+        "assignments": [],
+        "format": "reading.quiz",
+        "duration": 3600,
+        "importance": "core",
+        "type": "assignment",
+        "availabilityRule": "Available",
+        "id": "read-general-chemistry-chapter-3-bonding-and-chemical-interactions",
+        "uri": "main/MCAT/quizzes/genchem/mc15GCC3DPQ",
+        "sequenceId": 0,
+        "status": 0
+      },
+      "read-organic-chemistry-chapter-1-nomenclature": {
+        "name": null,
+        "title": "Read Organic Chemistry Chapter 1: Nomenclature",
+        "lesson": null,
+        "sources": [
+          "jasper"
+        ],
+        "assignments": [],
+        "format": "reading.quiz",
+        "duration": 3600,
+        "importance": "core",
+        "type": "assignment",
+        "availabilityRule": "Available",
+        "id": "read-organic-chemistry-chapter-1-nomenclature",
+        "uri": "main/MCAT/quizzes/ochem/mc15OCC1DPQ",
+        "sequenceId": 0,
+        "status": 0
+      },
+      "chem-phys-1-lesson-book-homework": {
+        "name": null,
+        "title": "Chem / Phys 1 Lesson Book Homework",
+        "lesson": null,
+        "sources": [
+          "s3"
+        ],
+        "assignments": [],
+        "format": "reading.pdf",
+        "duration": 2700,
+        "importance": "core",
+        "type": "assignment",
+        "availabilityRule": "Available",
+        "id": "chem-phys-1-lesson-book-homework",
+        "sequenceId": 0,
+        "status": 0
+      }
+    },
+    "status": {
+      "0": {
+        "status": "NotCreated",
+        "scores": [],
+        "sequenceId": 0
+      }
+    },
+    "assignmentGroups": {
+      "preview": {
+        "id": "preview",
+        "type": null,
+        "title": "Before Class Content Review",
+        "description": null,
+        "importance": null,
+        "assignments": [
+          "read-cars-chapters-15",
+          "mcat-channel-episode-creating-an-mcat-study-schedule"
+        ],
+        "format": null,
+        "assignmentGroups": [],
+        "additional": null,
+        "availabilityRule": "Available"
+      },
+      "review": {
+        "id": "review",
+        "type": null,
+        "title": "After Class",
+        "description": null,
+        "importance": null,
+        "assignments": [
+          "cars-1-lesson-book-homework"
+        ],
+        "format": null,
+        "assignmentGroups": [],
+        "additional": null,
+        "availabilityRule": "Available"
+      },
+      "find-recommendations-and-more-resources-on-these-topics": {
+        "id": "find-recommendations-and-more-resources-on-these-topics",
+        "type": null,
+        "title": "Find Recommendations and More Resources on These Topics",
+        "description": null,
+        "importance": "practice",
+        "assignments": [
+          "teach-me-more",
+          "test-me-more"
+        ],
+        "format": null,
+        "assignmentGroups": [],
+        "additional": null,
+        "availabilityRule": "Available"
+      }
+    }
+  },
+  "result": {
+    "message": null,
+    "data": null,
+    "sources": [
+      "jasper"
+    ],
+    "lessons": [
+      "gettingStarted",
+      "unit1"
+    ]
+  }
+}
