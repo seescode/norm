@@ -2,23 +2,30 @@ module.exports = function () {
     const normalize = require('normalizr').normalize;
     const Schema = require('normalizr').Schema;
     const arrayOf = require('normalizr').arrayOf;
+
+    const lessonsSchema = new Schema('lessons', { idAttribute: 'id' });
+    const assignmentsSchema = new Schema('assignments', { idAttribute: 'id' });
+    const sourcesSchema = new Schema('sources', { idAttribute: 'name' });
+    const sourcesDataSchema = new Schema('data', { idAttribute: 'value' });
+    const statusSchema = new Schema('status', { idAttribute: 'sequenceId' });
     
-    const schema = new Schema('schema', { idAttribute: 'id' });
-    const articleSchema = new Schema('article', { idAttribute: 'id' });
-    const authorSchema = new Schema('author', { idAttribute: 'id' });
+    var lessons = require('../data/lessons.js');
 
-    var studyplan = require('../data/studyplan.js');
-
-    schema.define({
-        article: arrayOf(articleSchema)
+    lessonsSchema.define({
+        assignments: arrayOf(assignmentsSchema)
     });
 
-    articleSchema.define({
-        author: authorSchema
+    assignmentsSchema.define({
+        sources: arrayOf(sourcesSchema),
+        status: statusSchema
     });
 
-    var output = normalize(studyplan, schema);
-    console.log('Studyplan run: ');
+    sourcesSchema.define({
+        data: arrayOf(sourcesDataSchema)
+    });
+
+    var output = normalize(lessons, lessonsSchema);
+    console.log('Lessons run: ');
     console.log(JSON.stringify(output, null, 2));
     console.log('');
 }

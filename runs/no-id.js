@@ -3,8 +3,8 @@ module.exports = function () {
     const Schema = require('normalizr').Schema;
     const arrayOf = require('normalizr').arrayOf;
 
-    const articleSchema = new Schema('article', { idAttribute: 'id' });
-    const authorSchema = new Schema('author', { idAttribute: 'id' });
+    const articleSchema = new Schema('article2', { idAttribute: 'id' });
+    const authorSchema = new Schema('author2', { idAttribute: 'id' });
 
     articleSchema.define({
         author: authorSchema
