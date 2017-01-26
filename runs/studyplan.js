@@ -4,12 +4,12 @@ const fs = require('fs');
 
 
 
-const lessonsSchema = new schema.Entity('lessons', { idAttribute: 'id' });
-const assignmentsSchema = new schema.Entity('assignments', { idAttribute: 'id' });
-const sourcesSchema = new schema.Entity('sources', { idAttribute: 'name' });
-const sourcesDataSchema = new schema.Entity('data', { idAttribute: 'value' });
-const statusSchema = new schema.Entity('status', { idAttribute: 'sequenceId' });
-const assignmentGroupsSchema = new schema.Entity('assignmentGroups', { idAttribute: 'id' });
+const lessonsSchema = new schema.Entity('lessons', {}, { idAttribute: 'id' });
+const assignmentsSchema = new schema.Entity('assignments', {}, { idAttribute: 'id' });
+const sourcesSchema = new schema.Entity('sources', {}, { idAttribute: 'name' });
+const sourcesDataSchema = new schema.Entity('data', {}, { idAttribute: 'value' });
+const statusSchema = new schema.Entity('status', {}, { idAttribute: 'sequenceId' });
+const assignmentGroupsSchema = new schema.Entity('assignmentGroups', {}, { idAttribute: 'id' });
 
 var studyplan = require('../data/studyplan.js');
 

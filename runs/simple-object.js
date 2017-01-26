@@ -2,9 +2,9 @@
 const normalize = require('normalizr').normalize;
 const schema = require('normalizr').schema;
 
-const dataSchema = new schema.Entity('schema', { idAttribute: 'id' });
-const articleSchema = new schema.Entity('article', { idAttribute: 'id' });
-const authorSchema = new schema.Entity('author', { idAttribute: 'id' });
+const dataSchema = new schema.Entity('schema', {}, { idAttribute: 'id' });
+const articleSchema = new schema.Entity('article', {}, { idAttribute: 'id' });
+const authorSchema = new schema.Entity('author', {}, { idAttribute: 'id' });
 
 dataSchema.define({
     article: [articleSchema]

@@ -1,421 +1,73 @@
 {
   "entities": {
-    "data": {
-      "undefined": {
-        "name": "jasper-product-code",
-        "value": "MCATBetaNGC"
+    "answer": {
+      "cbde97fb-df37-48e2-95be-326b90f337cc": {
+        "kaplan-type": "answer-choice",
+        "content-item-name": "mc15q4899-choice-1",
+        "correct": "yes",
+        "uuid": "cbde97fb-df37-48e2-95be-326b90f337cc",
+        "content": "Other reactions deplete the cell’s supply of DHAP."
+      },
+      "953ca1fb-8d33-4133-9618-b1f1502047f9": {
+        "kaplan-type": "answer-choice",
+        "content-item-name": "mc15q4899-choice-2",
+        "uuid": "953ca1fb-8d33-4133-9618-b1f1502047f9",
+        "content": "Other reactions deplete the cell’s supply of GAP."
+      },
+      "b79eea9c-ca32-429b-a017-a9cb154f0171": {
+        "kaplan-type": "answer-choice",
+        "content-item-name": "mc15q4899-choice-3",
+        "uuid": "b79eea9c-ca32-429b-a017-a9cb154f0171",
+        "content": "Rat liver cells produce less TIM than do other cells."
+      },
+      "4845fabe-a237-401c-a5cb-1b0acc66da73": {
+        "kaplan-type": "answer-choice",
+        "content-item-name": "mc15q4899-choice-4",
+        "uuid": "4845fabe-a237-401c-a5cb-1b0acc66da73",
+        "content": "Rat liver cells produce more TIM than do other cells."
       }
     },
-    "sources": {
-      "undefined": {
-        "name": "filter",
-        "data": []
+    "explanation": {
+      "35b2bbcb-0951-4e45-8afb-91f03afceafd": {
+        "uuid": "35b2bbcb-0951-4e45-8afb-91f03afceafd",
+        "content": "<p>The answer should explain the reason for the rat’s unusual concentration ratio: namely, why is it that in rat liver cells, [DHAP]/[GAP] is less than the normal value for <i>K</i><sub>eq</sub>? This means that there is either less DHAP or more GAP present in the cell, than would be expected at equilibrium. The right answer should be one that reflects one of those two possibilities,<b> choice (A)</b> fits the bill. </p>"
       }
     },
-    "status": {
-      "undefined": {
-        "status": "NotCreated",
-        "scores": [],
-        "sequenceId": 0
+    "content": {
+      "84cd3d21-1d52-4227-99c6-6ccbe61b4d43": {
+        "kaplan-type": "question",
+        "content-item-name": "mc15q4899",
+        "interaction-type": "multiple-choice",
+        "uuid": "84cd3d21-1d52-4227-99c6-6ccbe61b4d43",
+        "prompt": "<p>The enzyme triose-phosphate isomerase (TIM) catalyzes the reaction below, one of the steps in glycolysis: </p> <p>GAP <b>⇋</b> DHAP </p> <p>At physiological conditions, <i>K</i><sub>eq</sub> for this reaction is 22.0. In rat liver, however, the [DHAP] to [GAP] ratio is approximately 10. Which of the following is the most plausible explanation for this discrepancy? </p>",
+        "answers": [
+          "cbde97fb-df37-48e2-95be-326b90f337cc",
+          "953ca1fb-8d33-4133-9618-b1f1502047f9",
+          "b79eea9c-ca32-429b-a017-a9cb154f0171",
+          "4845fabe-a237-401c-a5cb-1b0acc66da73"
+        ],
+        "explanation": [
+          "b54fe85d-6aa0-4aaf-b582-434e21451907",
+          "35b2bbcb-0951-4e45-8afb-91f03afceafd"
+        ]
       }
     },
-    "assignments": {
-      "watch-orientation-video": {
-        "name": null,
-        "title": "Watch Orientation Video",
-        "lesson": null,
-        "sources": [
-          null
-        ],
-        "assignments": [],
-        "format": "video.jasper",
-        "duration": 420,
-        "importance": "core",
-        "type": "assignment",
-        "availabilityRule": "Available",
-        "id": "watch-orientation-video",
-        "uri": "main/MCAT/MC150100",
-        "sequenceId": 0
-      },
-      "mcat-diagnostic-exam": {
-        "name": null,
-        "title": "MCAT Diagnostic Exam",
-        "lesson": null,
-        "sources": [
-          null
-        ],
-        "assignments": [],
-        "format": "test.diagnostic",
-        "duration": 14400,
-        "importance": "core",
-        "type": "assignment",
-        "availabilityRule": "Available",
-        "id": "mcat-diagnostic-exam",
-        "uri": "main/MCAT/practicetests/diag/mc15Diag",
-        "sequenceId": 0
-      },
-      "science-assessments": {
-        "name": null,
-        "title": "Science Assessments",
-        "lesson": null,
-        "sources": [
-          null
-        ],
-        "assignments": [],
-        "format": "test.diagnostic",
-        "duration": 7200,
-        "importance": "core",
-        "type": "assignment",
-        "availabilityRule": "Available",
-        "id": "science-assessments",
-        "uri": "main/MCAT/practicetests/scienceasses/mcatSciAssesment15",
-        "sequenceId": 0
-      },
-      "important-welcome-message": {
-        "name": null,
-        "title": "Important Welcome Message",
-        "lesson": null,
-        "sources": [
-          null
-        ],
-        "assignments": [],
-        "format": "reading.pdf",
-        "duration": null,
-        "importance": "core",
-        "type": "assignment",
-        "availabilityRule": "Available",
-        "id": "important-welcome-message",
-        "sequenceId": 0
-      },
-      "how-to-access-your-mcat-flashcard-app": {
-        "name": null,
-        "title": "How to Access Your MCAT Flashcard App",
-        "lesson": null,
-        "sources": [
-          null
-        ],
-        "assignments": [],
-        "format": "reading.pdf",
-        "duration": null,
-        "importance": "core",
-        "type": "assignment",
-        "availabilityRule": "Available",
-        "id": "how-to-access-your-mcat-flashcard-app",
-        "sequenceId": 0
-      },
-      "how-to-access-a-digital-version-of-your-mcat-review-books": {
-        "name": null,
-        "title": "How to Access a Digital Version of Your MCAT Review Books",
-        "lesson": null,
-        "sources": [],
-        "assignments": [],
-        "format": "link.external",
-        "duration": null,
-        "importance": "core",
-        "type": "assignment",
-        "availabilityRule": "Available",
-        "id": "how-to-access-a-digital-version-of-your-mcat-review-books",
-        "sequenceId": 0
-      },
-      "information-about-your-higher-score-guarantee": {
-        "name": null,
-        "title": "Information About Your Higher Score Guarantee",
-        "lesson": null,
-        "sources": [
-          null
-        ],
-        "assignments": [],
-        "format": "reading.pdf",
-        "duration": null,
-        "importance": "core",
-        "type": "assignment",
-        "availabilityRule": "Available",
-        "id": "information-about-your-higher-score-guarantee",
-        "sequenceId": 0
-      },
-      "read-cars-chapters-15": {
-        "name": null,
-        "title": "Read CARS Chapters 1–5",
-        "lesson": null,
-        "sources": [
-          null
-        ],
-        "assignments": [],
-        "format": "reading.book",
-        "duration": 9000,
-        "importance": "core",
-        "type": "assignment",
-        "availabilityRule": "Available",
-        "id": "read-cars-chapters-15",
-        "uri": null,
-        "sequenceId": 0
-      },
-      "mcat-channel-episode-creating-an-mcat-study-schedule": {
-        "name": null,
-        "title": "MCAT Channel Episode: Creating an MCAT Study Schedule",
-        "lesson": null,
-        "sources": [
-          null
-        ],
-        "assignments": [],
-        "format": "video.mcatchannel",
-        "duration": 3600,
-        "importance": "core",
-        "type": "assignment",
-        "availabilityRule": "Available",
-        "id": "mcat-channel-episode-creating-an-mcat-study-schedule",
-        "uri": "main/MCAT/video/video8/mc15ChCars1",
-        "sequenceId": 0
-      },
-      "cars-1-lesson-book-homework": {
-        "name": null,
-        "title": "CARS 1 Lesson Book Homework",
-        "lesson": null,
-        "sources": [
-          null
-        ],
-        "assignments": [],
-        "format": "reading.pdf",
-        "duration": 2700,
-        "importance": "core",
-        "type": "assignment",
-        "availabilityRule": "Available",
-        "id": "cars-1-lesson-book-homework",
-        "sequenceId": 0
-      },
-      "teach-me-more": {
-        "name": null,
-        "title": "Teach Me More",
-        "lesson": null,
-        "sources": [
-          null
-        ],
-        "assignments": [],
-        "format": "",
-        "duration": null,
-        "importance": "core",
-        "type": "filter",
-        "criteria": {
-          "fields": [
-            {
-              "name": "lesson",
-              "value": "unit1.chem-phys"
-            },
-            {
-              "name": "format",
-              "value": "video.interactive,reading.quiz"
-            }
-          ]
-        },
-        "availabilityRule": "Available",
-        "id": "teach-me-more",
-        "uri": null,
-        "sequenceId": 0
-      },
-      "test-me-more": {
-        "name": null,
-        "title": "Test Me More",
-        "lesson": null,
-        "sources": [
-          null
-        ],
-        "assignments": [],
-        "format": "",
-        "duration": null,
-        "importance": "core",
-        "type": "filter",
-        "criteria": {
-          "fields": [
-            {
-              "name": "lesson",
-              "value": "unit1.chem-phys"
-            },
-            {
-              "name": "format",
-              "value": "test.quiz"
-            }
-          ]
-        },
-        "availabilityRule": "Available",
-        "id": "test-me-more",
-        "uri": null,
-        "sequenceId": 0
-      },
-      "read-general-chemistry-chapter-3-bonding-and-chemical-interactions": {
-        "name": null,
-        "title": "Read General Chemistry Chapter 3: Bonding and Chemical Interactions",
-        "lesson": null,
-        "sources": [
-          null
-        ],
-        "assignments": [],
-        "format": "reading.quiz",
-        "duration": 3600,
-        "importance": "core",
-        "type": "assignment",
-        "availabilityRule": "Available",
-        "id": "read-general-chemistry-chapter-3-bonding-and-chemical-interactions",
-        "uri": "main/MCAT/quizzes/genchem/mc15GCC3DPQ",
-        "sequenceId": 0
-      },
-      "read-organic-chemistry-chapter-1-nomenclature": {
-        "name": null,
-        "title": "Read Organic Chemistry Chapter 1: Nomenclature",
-        "lesson": null,
-        "sources": [
-          null
-        ],
-        "assignments": [],
-        "format": "reading.quiz",
-        "duration": 3600,
-        "importance": "core",
-        "type": "assignment",
-        "availabilityRule": "Available",
-        "id": "read-organic-chemistry-chapter-1-nomenclature",
-        "uri": "main/MCAT/quizzes/ochem/mc15OCC1DPQ",
-        "sequenceId": 0
-      },
-      "chem-phys-1-lesson-book-homework": {
-        "name": null,
-        "title": "Chem / Phys 1 Lesson Book Homework",
-        "lesson": null,
-        "sources": [
-          null
-        ],
-        "assignments": [],
-        "format": "reading.pdf",
-        "duration": 2700,
-        "importance": "core",
-        "type": "assignment",
-        "availabilityRule": "Available",
-        "id": "chem-phys-1-lesson-book-homework",
-        "sequenceId": 0
+    "question": {
+      "84cd3d21-1d52-4227-99c6-6ccbe61b4d43": {
+        "id": "84cd3d21-1d52-4227-99c6-6ccbe61b4d43",
+        "path": "/api/v1/item/mc15q4899",
+        "system": "content",
+        "content": "84cd3d21-1d52-4227-99c6-6ccbe61b4d43"
       }
     },
-    "lessons": {
-      "gettingStarted": {
-        "id": "gettingStarted",
-        "title": "Get Started",
-        "description": null,
-        "subtitle": null,
-        "subject": null,
-        "assignments": [
-          "watch-orientation-video",
-          "mcat-diagnostic-exam",
-          "science-assessments",
-          "important-welcome-message",
-          "how-to-access-your-mcat-flashcard-app",
-          "how-to-access-a-digital-version-of-your-mcat-review-books",
-          "information-about-your-higher-score-guarantee"
-        ],
-        "assignmentGroups": [],
-        "additional": null,
-        "lessons": [],
-        "path": "gettingStarted",
-        "nextLessonPath": "unit1.cars"
-      },
-      "cars": {
-        "id": "cars",
-        "title": "CARS",
-        "subtitle": "Introduction to CARS Passages",
-        "subject": "cars",
-        "assignments": [],
-        "assignmentGroups": [
-          "preview",
-          "review",
-          "find-recommendations-and-more-resources-on-these-topics"
-        ],
-        "lessons": [],
-        "path": "unit1.cars",
-        "nextLessonPath": "unit1.chem-phys"
-      },
-      "chem-phys": {
-        "id": "chem-phys",
-        "title": "Chem / Phys",
-        "subtitle": "Science Passages and Science Knowledge Questions",
-        "subject": "chem-phys",
-        "assignments": [],
-        "assignmentGroups": [
-          "preview",
-          "review",
-          "find-recommendations-and-more-resources-on-these-topics"
-        ],
-        "lessons": [],
-        "path": "unit1.chem-phys",
-        "nextLessonPath": "unit1.bio-biochem"
-      },
-      "unit1": {
-        "id": "unit1",
-        "title": "Unit 1",
-        "subtitle": null,
-        "subject": null,
-        "assignments": [],
-        "assignmentGroups": [],
-        "additional": null,
-        "lessons": [
-          "cars",
-          "chem-phys"
-        ],
-        "path": "unit1",
-        "nextLessonPath": null
-      }
-    },
-    "assignmentGroups": {
-      "preview": {
-        "id": "preview",
-        "type": null,
-        "title": "Before Class Content Review",
-        "description": null,
-        "importance": null,
-        "assignments": [
-          "read-general-chemistry-chapter-3-bonding-and-chemical-interactions",
-          "read-organic-chemistry-chapter-1-nomenclature"
-        ],
-        "format": null,
-        "assignmentGroups": [],
-        "additional": null,
-        "availabilityRule": "Available"
-      },
-      "review": {
-        "id": "review",
-        "type": null,
-        "title": "After Class",
-        "description": null,
-        "importance": null,
-        "assignments": [
-          "chem-phys-1-lesson-book-homework"
-        ],
-        "format": null,
-        "assignmentGroups": [],
-        "additional": null,
-        "availabilityRule": "Available"
-      },
-      "find-recommendations-and-more-resources-on-these-topics": {
-        "id": "find-recommendations-and-more-resources-on-these-topics",
-        "type": null,
-        "title": "Find Recommendations and More Resources on These Topics",
-        "description": null,
-        "importance": "practice",
-        "assignments": [
-          "teach-me-more",
-          "test-me-more"
-        ],
-        "format": null,
-        "assignmentGroups": [],
-        "additional": null,
-        "availabilityRule": "Available"
+    "testContext": {
+      "46427545-71c8-4382-98d8-fb05e7246403": {
+        "id": "46427545-71c8-4382-98d8-fb05e7246403",
+        "questions": [
+          "84cd3d21-1d52-4227-99c6-6ccbe61b4d43"
+        ]
       }
     }
   },
-  "result": {
-    "message": null,
-    "data": null,
-    "sources": [
-      null
-    ],
-    "lessons": [
-      "gettingStarted",
-      "unit1"
-    ]
-  }
+  "result": "46427545-71c8-4382-98d8-fb05e7246403"
 }
