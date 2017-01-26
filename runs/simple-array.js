@@ -1,33 +1,31 @@
-module.exports = function () {
-    const normalize = require('normalizr').normalize;
-    const Schema = require('normalizr').Schema;
-    const arrayOf = require('normalizr').arrayOf;
 
-    const articleSchema = new Schema('article', { idAttribute: 'id' });
-    const authorSchema = new Schema('author', { idAttribute: 'id' });
+const normalize = require('normalizr').normalize;
+const schema = require('normalizr').schema;
 
-    articleSchema.define({
-        author: authorSchema
-    });
+const articleSchema = new schema.Entity('article', { idAttribute: 'id' });
+const authorSchema = new schema.Entity('author', { idAttribute: 'id' });
 
-    var data = [{
-            id: 1,
-            title: 'Some Article',
-            author: {
-                id: 1,
-                name: 'Dan'
-            }
-        }, {
-            id: 2,
-            title: 'Other Article',
-            author: {
-                id: 1,
-                name: 'Dan'
-            }
-        }];
+articleSchema.define({
+    author: authorSchema
+});
 
-    var output = normalize(data, arrayOf(articleSchema));
-    console.log('Simple array run: ')
-    console.log(JSON.stringify(output, null, 2));
-    console.log('');
-}
+var data = [{
+    id: 1,
+    title: 'Some Article',
+    author: {
+        id: 1,
+        name: 'Dan'
+    }
+}, {
+    id: 2,
+    title: 'Other Article',
+    author: {
+        id: 1,
+        name: 'Dan'
+    }
+}];
+
+var output = normalize(data, [articleSchema]);
+console.log('Simple array run: ')
+console.log(JSON.stringify(output, null, 2));
+console.log('');

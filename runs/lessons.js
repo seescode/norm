@@ -1,31 +1,28 @@
-module.exports = function () {
-    const normalize = require('normalizr').normalize;
-    const Schema = require('normalizr').Schema;
-    const arrayOf = require('normalizr').arrayOf;
+const normalize = require('normalizr').normalize;
+const schema = require('normalizr').schema;
 
-    const lessonsSchema = new Schema('lessons', { idAttribute: 'id' });
-    const assignmentsSchema = new Schema('assignments', { idAttribute: 'id' });
-    const sourcesSchema = new Schema('sources', { idAttribute: 'name' });
-    const sourcesDataSchema = new Schema('data', { idAttribute: 'value' });
-    const statusSchema = new Schema('status', { idAttribute: 'sequenceId' });
-    
-    var lessons = require('../data/lessons.js');
+const lessonsSchema = new schema.Entity('lessons', { idAttribute: 'id' });
+const assignmentsSchema = new schema.Entity('assignments', { idAttribute: 'id' });
+const sourcesSchema = new schema.Entity('sources', { idAttribute: 'name' });
+const sourcesDataSchema = new schema.Entity('data', { idAttribute: 'value' });
+const statusSchema = new schema.Entity('status', { idAttribute: 'sequenceId' });
 
-    lessonsSchema.define({
-        assignments: arrayOf(assignmentsSchema)
-    });
+var lessons = require('../data/lessons.js');
 
-    assignmentsSchema.define({
-        sources: arrayOf(sourcesSchema),
-        status: statusSchema
-    });
+lessonsSchema.define({
+    assignments: [assignmentsSchema]
+});
 
-    sourcesSchema.define({
-        data: arrayOf(sourcesDataSchema)
-    });
+assignmentsSchema.define({
+    sources: [sourcesSchema],
+    status: statusSchema
+});
 
-    var output = normalize(lessons, lessonsSchema);
-    console.log('Lessons run: ');
-    console.log(JSON.stringify(output, null, 2));
-    console.log('');
-}
+sourcesSchema.define({
+    data: [sourcesDataSchema]
+});
+
+var output = normalize(lessons, lessonsSchema);
+console.log('Lessons run: ');
+console.log(JSON.stringify(output, null, 2));
+console.log('');
