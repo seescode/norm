@@ -7,6 +7,7 @@ const questionSchema = new schema.Entity('question', {}, { idAttribute: 'id' });
 const contentSchema = new schema.Entity('content', {}, { idAttribute: 'uuid' });
 const answerSchema = new schema.Entity('answer', {}, { idAttribute: 'uuid' });
 const explanationSchema = new schema.Entity('explanation', {}, { idAttribute: 'uuid' });
+const feedbackSchema = new schema.Entity('feedback', {}, { idAttribute: 'uuid' });
 
 var test = require('../data/test.js');
 
@@ -21,7 +22,11 @@ questionSchema.define({
 
 contentSchema.define({
     answers: [answerSchema],
-    explanation: [explanationSchema]
+    explanation: explanationSchema
+});
+
+explanationSchema.define({
+    feedback: feedbackSchema
 });
 
 var output = normalize(test, testSchema);

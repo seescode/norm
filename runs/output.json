@@ -27,10 +27,16 @@
         "content": "Rat liver cells produce more TIM than do other cells."
       }
     },
-    "explanation": {
+    "feedback": {
       "35b2bbcb-0951-4e45-8afb-91f03afceafd": {
         "uuid": "35b2bbcb-0951-4e45-8afb-91f03afceafd",
         "content": "<p>The answer should explain the reason for the rat’s unusual concentration ratio: namely, why is it that in rat liver cells, [DHAP]/[GAP] is less than the normal value for <i>K</i><sub>eq</sub>? This means that there is either less DHAP or more GAP present in the cell, than would be expected at equilibrium. The right answer should be one that reflects one of those two possibilities,<b> choice (A)</b> fits the bill. </p>"
+      }
+    },
+    "explanation": {
+      "b54fe85d-6aa0-4aaf-b582-434e21451907": {
+        "uuid": "b54fe85d-6aa0-4aaf-b582-434e21451907",
+        "feedback": "35b2bbcb-0951-4e45-8afb-91f03afceafd"
       }
     },
     "content": {
@@ -46,10 +52,7 @@
           "b79eea9c-ca32-429b-a017-a9cb154f0171",
           "4845fabe-a237-401c-a5cb-1b0acc66da73"
         ],
-        "explanation": [
-          "b54fe85d-6aa0-4aaf-b582-434e21451907",
-          "35b2bbcb-0951-4e45-8afb-91f03afceafd"
-        ]
+        "explanation": "b54fe85d-6aa0-4aaf-b582-434e21451907"
       }
     },
     "question": {
